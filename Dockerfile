@@ -4,7 +4,8 @@ ENV RDP_USER=alpine \
     RDP_GROUP=alpine \
     RDP_UID=1000 \
     RDP_GID=1000 \
-    RDP_PASSWORD=alpine
+    RDP_PASSWORD=alpine \
+    RDP_SCREEN=1920x1080x24
 
 # add packages
 RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories \

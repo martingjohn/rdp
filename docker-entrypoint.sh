@@ -10,6 +10,7 @@ chown -R $RDP_USER:$RDP_GROUP /home
 
 # Change user in supervisor file
 SED_CMD="s/USER/$RDP_USER/g" && sed -i.bak $SED_CMD /etc/supervisord.conf
+SED_CMD="s/SCREEN/$RDP_SCREEN/g" && sed -i.bak2 $SED_CMD /etc/supervisord.conf
 
 # Add the ssh config if needed
 
