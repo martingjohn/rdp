@@ -12,9 +12,16 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
  && apk --update \
         --no-cache \
         add \
-        alpine-desktop \
+        adwaita-icon-theme \
+        bash \
+        ca-certificates \
         dbus \
         faenza-icon-theme \
+        ffmpeg-libs \
+        firefox-esr \
+        libcanberra-gtk3 \
+        lxdm \
+        mesa-gbm \
         openssh \
         paper-gtk-theme \
         paper-icon-theme \
@@ -25,13 +32,15 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
         thunar-volman \
         ttf-freefont \
         util-linux \
-        wireshark \
+        wayland-libs-server \
         x11vnc \
         xauth \
         xf86-input-mouse \
         xf86-input-keyboard \
         xf86-input-synaptics \
+        xf86-video-vesa \
         xfce4 \
+        xorg-server \
         xrdp \
         xvfb \
  && rm -rf /tmp/* \
