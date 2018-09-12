@@ -21,5 +21,6 @@ docker run -d \
            -p 3389:3389 \
            -e RDP_USER=user \
            -e RDP_PASSWORD=password \
+           -v /etc/localtime:/etc/localtime:ro \
            martinjohn/rdp
 
